@@ -1,6 +1,7 @@
-# Hyperledger Fabric Composer - UFMG + Smiles + Tim
+# UFMG - Projeto Orientado em Computação II
+# Aluna: Ana Luisa Rodrigues
 
-## Versão 1.2
+## Hyperledger Fabric Composer - Versão 1.2
 
 ## Implementado com Kafka + Zookeeper
 
