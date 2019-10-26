@@ -63,7 +63,7 @@ else
     exit 1
 fi
 
-cat << EOF > connection-smilespay.json
+cat << EOF > connection-ufrj.json
 {
     "name": "hlfv1",
     "x-type": "hlfv1",
@@ -178,7 +178,7 @@ else
     CARDOUTPUT2=PeerAdminUFRJ@hlfv1.card
 fi
 
-"${HL_COMPOSER_CLI}"  card create -p connection-smilespay.json -u PeerAdminUFRJ -c "${CERT2}" -k "${PRIVATE_KEY2}" -r PeerAdmin -r ChannelAdmin --file $CARDOUTPUT2
+"${HL_COMPOSER_CLI}"  card create -p connection-ufrj.json -u PeerAdminUFRJ -c "${CERT2}" -k "${PRIVATE_KEY2}" -r PeerAdmin -r ChannelAdmin --file $CARDOUTPUT2
 
 if [ "${NOIMPORT}" != "true" ]; then
     if "${HL_COMPOSER_CLI}"  card list -c PeerAdminUFRJ@hlfv1 > /dev/null; then
