@@ -63,7 +63,7 @@ else
     exit 1
 fi
 
-cat << EOF > connection-timpay.json
+cat << EOF > connection-usp.json
 {
     "name": "hlfv1",
     "x-type": "hlfv1",
@@ -178,7 +178,7 @@ else
     CARDOUTPUT3=PeerAdminUSP@hlfv1.card
 fi
 
-"${HL_COMPOSER_CLI}"  card create -p connection-timpay.json -u PeerAdminUSP -c "${CERT3}" -k "${PRIVATE_KEY3}" -r PeerAdmin -r ChannelAdmin --file $CARDOUTPUT3
+"${HL_COMPOSER_CLI}"  card create -p connection-usp.json -u PeerAdminUSP -c "${CERT3}" -k "${PRIVATE_KEY3}" -r PeerAdmin -r ChannelAdmin --file $CARDOUTPUT3
 
 if [ "${NOIMPORT}" != "true" ]; then
     if "${HL_COMPOSER_CLI}"  card list -c PeerAdminUSP@hlfv1 > /dev/null; then
