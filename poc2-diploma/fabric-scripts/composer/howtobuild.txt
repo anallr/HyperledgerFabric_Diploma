@@ -1,0 +1,7 @@
+./cryptogen generate --config=./crypto-config.yaml
+export FABRIC_CFG_PATH=$PWD
+./configtxgen -profile TwoOrgsOrdererGenesis -outputBlock ./channel-artifacts/genesis.block
+./configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ./channel-artifacts/channel.tx -channelID composerchannel
+./configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org1MSPanchors.tx -channelID composerchannel -asOrg Org1MSP
+./configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org2MSPanchors.tx -channelID composerchannel -asOrg Org2MSP
+./configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate ./channel-artifacts/Org3MSPanchors.tx -channelID composerchannel -asOrg Org3MSP

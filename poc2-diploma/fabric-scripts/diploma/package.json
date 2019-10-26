@@ -1,0 +1,11 @@
+{
+  "name": "diploma",
+  "version": "0.0.1",
+  "description": "Projeto Orientado em Computação II - Ana Luisa Rodrigues",
+  "scripts": {
+    "test": "mocha --recursive"
+  },
+  "author": "ana",
+  "email": "analuisalrod@gmail.com",
+  "license": "Apache-2.0"
+}
