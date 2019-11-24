@@ -42,7 +42,7 @@ async function graduation(tx) {
           }
             if (createDiploma == true && student.coleg.$identifier == coleg.id){
                 var timestamp = new Date(new Date().getTime());
-              var newDiploma = factory.newResource('poc2.assets', 'Diploma', randomId);
+                var newDiploma = factory.newResource('poc2.assets', 'Diploma', randomId);
                 newDiploma.owner = student;
                 newDiploma.unit = unit;
                 newDiploma.coleg = coleg;
@@ -55,7 +55,7 @@ async function graduation(tx) {
 }
 
 function getRandomInt() {
-min = Math.ceil(1);
-max = Math.floor(1000000);
-return Math.floor(Math.random() * (max - min)) + min;
+    let min = Math.ceil(1);
+    let max = Math.floor(1000000);
+    return Math.floor(Math.random() * (max - min)) + min;
 }
