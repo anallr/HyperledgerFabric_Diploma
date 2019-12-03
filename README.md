@@ -64,7 +64,7 @@ $ composer-rest-server -c ufrj@diploma -n never -p 3001
 $ composer-rest-server -c usp@diploma -n never -p 3002
 ```
 
-A API REST do Hyperledger Fabric estará então disponível localmente nas portas 3000, 3001 e 3002, para UFMG, UFRJ e USP, respectivamente. Elas podem ser acessada via browser pela URL: localhost:port
+A API REST do Hyperledger Fabric estará então disponível localmente nas portas 3000, 3001 e 3002, para UFMG, UFRJ e USP, respectivamente. Elas podem ser acessadas via browser pela URL: localhost:port
 
 ### Autora
 
