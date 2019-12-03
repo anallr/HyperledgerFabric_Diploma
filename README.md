@@ -55,13 +55,13 @@ $ ./config-networks.sh
 
 E executar em 3 abas de terminais diferentes:
 ```
-$ blabla1
+$ composer-rest-server -c ufmg@diploma -n never
 ```
 ```
-$ blabla2
+$ composer-rest-server -c ufrj@diploma -n never -p 3001
 ```
 ```
-$ blabla3
+$ composer-rest-server -c usp@diploma -n never -p 3002
 ```
 
 A API REST do Hyperledger Fabric estará então disponível localmente nas portas 3000, 3001 e 3002, para UFMG, UFRJ e USP, respectivamente. Elas podem ser acessada via browser pela URL: localhost:port
